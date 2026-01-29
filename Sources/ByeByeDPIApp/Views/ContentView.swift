@@ -31,6 +31,9 @@ struct ContentView: View {
                     Text("Команда: \(appState.selectedPreset.name)")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
+                    Text("Применяется к VPN при выборе стратегии.")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()

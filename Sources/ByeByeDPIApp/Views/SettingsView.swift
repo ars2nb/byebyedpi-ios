@@ -44,6 +44,15 @@ struct SettingsView: View {
                     .textSelection(.enabled)
             }
 
+            Section("Подбор стратегий") {
+                NavigationLink("Перейти к подбору") {
+                    StrategyTestView()
+                }
+                Text("Запускает последовательную проверку всех пресетов.")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+
             Section("Домены для подбора") {
                 ForEach(DomainList.youtubeTargets, id: \.self) { domain in
                     Text(domain)
